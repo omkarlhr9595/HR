@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Row Col Span</title>
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        th,
+        td {
+            padding: 20px;
+        }
+        #table {
+            margin-top: 20px;
+            display: inline-block;
+        }
+        #v {
+            background-color: violet;
+        }
+        #i {
+            background-color: indigo;
+        }
+        #g {
+            background-color: green;
+        }
+        #b {
+            background-color: blue;
+        }
+        #r {
+            background-color: red;
+        }
+        #table {
+            margin-top: 20px;
+        }
+        #b {
+            background-color: blue;
+        }
+        #g {
+            background-color: green;
+        }
+        #i {
+            background-color: indigo;
+        }
+        #r {
+            background-color: red;
+        }
+        #y {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Subjects</th>
+        </tr>
+        <tr>
+            <th>Sub1</th>
+            <th>Sub2</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <table id="table">
+        <tr>
+            <td rowspan="2" id="v"></td>
+            <td colspan="2" id="i"></td>
+        </tr>
+        <tr>
+            <td id="g"></td>
+            <td rowspan="2" id="b"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="r"></td>
+        </tr>
+    </table>
+    <table id="table">
+        <tr>
+            <td colspan="2" id="b"></td>
+            <td rowspan="2" id="g"></td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="i"></td>
+            <td id="r"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="y"></td>
+        </tr>
+    </table>
+</body>
+</html>
